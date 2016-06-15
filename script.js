@@ -9,7 +9,9 @@ start();
 
 function start() {
   var x = 0;  // 0 Seconds
-  cycle();
+  if (fibnum != Infinity) {
+    cycle();
+  }
   setTimeout(start, x*1000);
 }
 
