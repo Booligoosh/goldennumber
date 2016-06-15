@@ -28,5 +28,5 @@ function updateScreen() {
     var t = document.createTextNode(fibnum);
     li.appendChild(t);
     document.getElementById("fibnumsList").appendChild(li);
-    document.getElementById("phiDisplay").innerHTML = phi;
+    document.getElementById("phiDisplay").innerHTML = "Golden ratio (phi) &#8776; " + phi;
 }
