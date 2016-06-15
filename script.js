@@ -33,7 +33,7 @@ function updateScreen() {
   li.appendChild(t);
   document.getElementById("fibnumsList").appendChild(li);
   document.getElementById("phiDisplay").innerHTML = "Golden ratio (phi) &#8776; " + phi;
-  var w = 130 * phi;
-  var w = w.toString() + "px";
-  document.getElementById('rect3').setAttribute("width",w);
+  var h = 130 * phi;
+  h = h.toString() + "px";
+  document.getElementById('rect3').setAttribute("height",h);
 }
