@@ -18,9 +18,11 @@ function cycle() {
   a = currentNum - 1;
   b = currentNum - 2;
   fibnum = fibnums[a] + fibnums[b];
-  fibnums.push(fibnum);
-  phi = fibnums[currentNum] / fibnums[a];
-  updateScreen();
+  if (fibnum != Infinity) {
+    fibnums.push(fibnum);
+    phi = fibnums[currentNum] / fibnums[a];
+    updateScreen();
+  }
 }
 
 function updateScreen() {
