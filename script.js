@@ -19,5 +19,14 @@ function cycle() {
   b = currentNum - 2;
   fibnum = fibnums[a] + fibnums[b];
   fibnums.push(fibnum);
-  phi = fibnums[currentNum] / fibnums[currentNum - 1];
+  phi = fibnums[currentNum] / fibnums[a];
+  updateScreen();
+}
+
+function updateScreen() {
+    var li = document.createElement("LI");
+    var t = document.createTextNode(fibnum);
+    li.appendChild(t);
+    document.getElementById("fibnumsList").appendChild(li);
+    document.getElementById("phiDisplay").innerHTML = phi;
 }
