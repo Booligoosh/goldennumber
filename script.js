@@ -28,9 +28,12 @@ function cycle() {
 }
 
 function updateScreen() {
-    var li = document.createElement("LI");
-    var t = document.createTextNode(fibnum);
-    li.appendChild(t);
-    document.getElementById("fibnumsList").appendChild(li);
-    document.getElementById("phiDisplay").innerHTML = "Golden ratio (phi) &#8776; " + phi;
+  var li = document.createElement("LI");
+  var t = document.createTextNode(fibnum);
+  li.appendChild(t);
+  document.getElementById("fibnumsList").appendChild(li);
+  document.getElementById("phiDisplay").innerHTML = "Golden ratio (phi) &#8776; " + phi;
+  var w = 250 * fibnum;
+  var w = w.toString() + "px";
+  document.getElementById('rect3').setAttribute("width",w);
 }
